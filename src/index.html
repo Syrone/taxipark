@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <h1 class="visually-hidden">
+        Главная
+      </h1>
+      <div class="sections">
+        <section class="section">
+          <div class="container">
+            <div class="hero hero--desktop">
+              <div class="hero-main">
+                <span class="hero-main-sup">
+                  Таксопарк в Москве
+                </span>
+
+                <h2 class="hero-main-title">
+                  Выбери свой автомобиль, чтобы уже сегодня <span class="text-primary">заработать 16.740 ₽</span>
+                </h2>
+              </div>
+              <div class="hero-picture">
+                <picture>
+                  <source srcset="./img/hero/image.webp" type="image/webp">
+                  <img loading="lazy" src="./img/hero/image.jpg" class="hero-picture-image" width="590" height="610" alt="Картинка">
+                </picture>
+                <div class="hero-partner">
+                  <picture>
+                    <img loading="lazy" src="./img/hero/partner.svg" class="hero-partner-image" width="60" height="60" alt="Иконка">
+                  </picture>
+                  <span>
+                    Наш парк генеральный партнер Яндекса
+                  </span>
+                </div>
+              </div>
+              <div class="hero-detail">
+                <div class="hero-detail-price h3">
+                  2.000 ₽/сутки
+                </div>
+                <div class="hero-detail-text">
+                  Аренда автомобилей эконом класса
+                </div>
+              </div>
+              <div class="hero-detail">
+                <ul class="list-marker hero-detail-list">
+                  <li>
+                    Безопасные авто
+                  </li>
+                  <li>
+                    Прозрачные условия аренды
+                  </li>
+                  <li>
+                    Без залогов и депозитов
+                  </li>
+                  <li>
+                    Все услуги по обслуживанию машин за наш счет
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-base btn-primary hero-detail-btn">
+                  Выбрать автомобиль
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

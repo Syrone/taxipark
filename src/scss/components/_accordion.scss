@@ -1,0 +1,31 @@
+.accordion {
+
+	&-button {
+		--_icon-size: .5rem;
+
+		.icon {
+			transition: transform 250ms ease-in-out;
+		}
+	}
+
+	&-body {
+		display: grid;
+		grid-template-rows: 0fr;
+		transition: grid-template-rows 300ms ease-in-out;
+	}
+
+	&-content {
+		overflow: hidden;
+	}
+
+	&.is-show {
+		.accordion-button {
+			.icon {
+				transform: rotateX(180deg);
+			}
+		}
+		.accordion-body {
+			grid-template-rows: 1fr;
+		}
+	}
+}

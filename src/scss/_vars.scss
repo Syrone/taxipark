@@ -1,0 +1,47 @@
+:root {
+  // base
+  --font-family: "Gilroy", sans-serif;
+  --content-width: 75rem;
+  --container-offset: 1rem;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  
+  // font-size
+  --h1: 3.125rem;
+  --h2: 2.5rem;
+  --h3: 2rem;
+  --h4: 1.875rem;
+  --h5: 1.75rem;
+
+  --fs-1: .75rem;
+  --fs-2: .875rem;
+  --fs-base: 1rem;
+  --fs-3: 1.125rem;
+  --fs-4: 1.25rem;
+  --fs-5: 1.5rem;
+  --fs-6: 1.75rem;
+
+  // line-height
+  --lh: 1.25;
+  --lh-normal: normal;
+  --lh-1: 1;
+  --lh-2: 1.375;
+  --lh-3: 1.5;
+  --lh-4: 1.75;
+  --lh-5: 2;
+
+  // colors
+  --primary-color: #ff8e00;
+  --secondary-color: pink;
+  --dark-color: #000;
+  --light-color: #fff;
+  --gray-color: #333;
+  --title-color: #282828;
+  --text-color: #000;
+
+  --body-bg: #F4F4F4;
+  --bg-light: #fff;
+
+  // transition
+  --transition-duration: 200ms;
+  --transition-type: ease-in-out;
+}

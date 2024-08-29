@@ -1,0 +1,29 @@
+.brand {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+	font-size: var(--fs-1);
+	
+	picture {
+		flex-shrink: 0;
+	}
+
+	&-image {
+		width: 3.75rem;
+		height: 3.75rem;
+		display: block;
+
+		@media (min-width: 992px) {
+			width: 4.25rem;
+			height: 4.25rem;
+		}
+	}
+
+	&-slogan {
+		max-width: 6.75rem;
+		color: var(--text-color);
+		margin-left: .375rem;
+		border-left: 1px solid var(--title-color);
+		padding: .25rem 0 .25rem .75rem;
+	}
+}

@@ -1,0 +1,64 @@
+.header {
+	padding: 1.25rem 0;
+
+	@media (min-width: 992px) {
+		background-color: var(--bg-light);
+		padding: 1rem 0;
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-brand {
+		font-size: .625rem;
+
+		@media (min-width: 992px) {
+			font-size: var(--fs-1);
+		}
+
+		.brand-image {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+
+		.brand-slogan {
+			@media (max-width: 992px) {
+				max-width: 5rem;
+				margin-left: .625rem;
+				border-left: none;
+				padding: 0;
+			}
+		}
+	}
+
+	&-nav {
+		display: none;
+
+		@media (min-width: 992px) {
+			display: flex;
+			align-items: center;
+			gap: 1.5rem;
+			margin-inline: auto;
+		}
+	}
+
+	&-end {
+		display: flex;
+		align-items: center;
+		gap: 1.25rem;
+		
+		.choices {
+			display: none;
+			@media (min-width: 992px) {
+				display: block;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			gap: 2rem;
+		}
+	}
+}
