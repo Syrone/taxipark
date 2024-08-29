@@ -7,16 +7,14 @@
 
 	&-body {
 		display: none;
-		// max-height: 0px;
 		overflow: hidden;
 		position: absolute;
 		top: calc(100% + .5rem);
 		left: 0;
-		// transition: max-height 600ms ease-in-out;
 	}
 
 	&-content {
-		background-color: var(--body-bg);
+		background-color: var(--body-light);
 		border: 1px solid var(--title-color);
 		border-radius: .5rem;
 		padding: 1rem;
