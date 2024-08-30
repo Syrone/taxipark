@@ -1,0 +1,41 @@
+.features {
+	font-size: var(--fs-4);
+
+	@media (min-width: 992px) {
+		font-size: var(--h3);
+	}
+
+	> li {
+		display: flex;
+		align-items: center;
+		gap: 1.25rem;
+		border-top: 1px solid currentColor;
+		padding-block: 1rem;
+		
+		@media (min-width: 992px) {
+			gap: 2rem;
+			padding-block: 1.25rem;
+		}
+
+		&::before {
+			content: '';
+			width: 1.5rem;
+			height: 1.5rem;
+			display: block;
+			flex-shrink: 0;
+			background-image: url(../img/icons/check-list.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+
+			@media (min-width: 992px) {
+				width: 2.5rem;
+				height: 2.5rem;
+			}
+		}
+
+		&:last-child {
+			border-bottom: 1px solid currentColor;
+		}
+	}
+}
