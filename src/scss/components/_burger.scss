@@ -1,4 +1,6 @@
 .burger {
+	--_color: var(--light-color);
+
   display: block;
 	flex-shrink: 0;
   position: relative;
@@ -183,7 +185,7 @@
 			--_icon-size: 2rem;
 		}
 		.btn-callback {
-			@media (max-width: 768px) {
+			@media (max-width: 992px) {
 				--_font-size: var(--fs-6);
 
 				span {

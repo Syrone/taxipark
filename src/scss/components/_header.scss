@@ -1,5 +1,9 @@
 .header {
 	padding: 1.25rem 0;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1060;
 
 	@media (min-width: 992px) {
 		background-color: var(--bg-light);
@@ -27,6 +31,7 @@
 		.brand-slogan {
 			@media (max-width: 992px) {
 				max-width: 5rem;
+				color: var(--light-color);
 				margin-left: .625rem;
 				border-left: none;
 				padding: 0;
@@ -42,6 +47,14 @@
 			align-items: center;
 			gap: 1.5rem;
 			margin-inline: auto;
+		}
+	}
+
+	&-callback {
+		.btn-callback {
+			@media (max-width: 992px) {
+				--_color: var(--light-color);
+			}
 		}
 	}
 

@@ -2,13 +2,13 @@
   // base
   --font-family: "Gilroy", sans-serif;
   --content-width: 75rem;
-  --container-offset: 1rem;
+  --container-offset: .625rem;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   
   // font-size
-  --h1: 3.125rem;
-  --h2: 2.5rem;
-  --h3: 2rem;
+  --h1: 1.5rem;
+  --h2: 1.5rem;
+  --h3: 1.5rem;
   --h4: 1.875rem;
   --h5: 1.75rem;
 
@@ -44,4 +44,10 @@
   // transition
   --transition-duration: 200ms;
   --transition-type: ease-in-out;
+
+  @media (min-width: 992px) {
+    --h1: 3.125rem;
+    --h2: 2.5rem;
+    --h3: 2rem;
+  }
 }

@@ -11,7 +11,7 @@
 	--_padding-y: 0;
 	--_padding-x: 0;
 
-	--_icon-size: 1rem;
+	--_icon-size: 1.5rem;
 	--_icon-color: currentColor;
 
 	--_transition-duration: var(--transition-duration);
@@ -28,7 +28,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: .5rem;
+	gap: .375rem;
 
 	font-size: var(--_font-size);
 	font-weight: var(--_font-weight);
@@ -141,9 +141,6 @@
 .btn-primary {
 	--_color: var(--title-color);
 	--_background-color: var(--primary-color);
-	--_border-radius: .75rem;
-	--_padding-y: .75rem;
-	--_padding-x: 1rem;
 	
 	--_color-active: var(--light-color);
 	--_background-color-active: var(--title-color);
@@ -157,7 +154,17 @@
 
 .btn-base {
 	--_height: 2.875rem;
-	--_font-size: var(--fs-base);
+	--_font-size: var(--fs-3);
+	--_font-weight: 500;
+	--_border-radius: .5rem;
+	--_padding-y: .5rem;
+	--_padding-x: 1rem;
+
+	@media (min-width: 992px) {
+		--_font-size: var(--fs-base);
+		--_border-radius: .75rem;
+		--_padding-y: .75rem;
+	}
 }
 
 .btn-lg {
