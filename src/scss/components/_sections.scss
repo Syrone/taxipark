@@ -35,3 +35,24 @@
 		font-size: var(--fs-4);
 	}
 }
+
+.section-background {
+
+	@media (min-width: 1200px) {
+		background-image: url(../img/background-svg.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right bottom;
+
+		:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&--offset-bottom {
+		@media (min-width: 1200px) {
+			margin-bottom: -7.5rem;
+			padding-bottom: 15rem;
+		}
+	}
+}

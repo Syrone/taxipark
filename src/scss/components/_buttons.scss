@@ -147,9 +147,25 @@
 	--_border-color-active: transparent;
 }
 
+.btn-outline-secondary {
+	--_border: 1px solid currentColor;
+
+	--_color-active: var(--title-color);
+	--_background-color-active: var(--primary-color);
+	--_border-color-active: var(--primary-color);
+}
+
+.btn-icon {
+	--_border-radius: .75rem;
+	--_padding-y: .875rem;
+	--_padding-x: .875rem;
+	--_icon-size: 1rem;
+}
+
 .btn-sm {
 	--_height: 1.5rem;
 	--_font-size: .875rem;
+	user-select: none;
 }
 
 .btn-base {
@@ -159,6 +175,7 @@
 	--_border-radius: .5rem;
 	--_padding-y: .5rem;
 	--_padding-x: 1rem;
+	user-select: none;
 
 	@media (min-width: 992px) {
 		--_font-size: var(--fs-base);
@@ -170,4 +187,5 @@
 .btn-lg {
 	--_height: 3.25rem;
 	--_font-size: 1.25rem;
+	user-select: none;
 }

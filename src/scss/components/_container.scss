@@ -3,3 +3,7 @@
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
 }
+
+.swiper-container {
+  padding-inline: max(var(--container-offset), (100% - var(--content-width)) / 2);
+}

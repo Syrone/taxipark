@@ -1,5 +1,6 @@
 .header {
 	padding: 1.25rem 0;
+	transition: background var(--transition-duration) var(--transition-type), padding var(--transition-duration) var(--transition-type);
 	position: sticky;
 	top: 0;
 	left: 0;
@@ -8,6 +9,25 @@
 	@media (min-width: 992px) {
 		background-color: var(--bg-light);
 		padding: 1rem 0;
+	}
+
+	@media (max-width: 992px) {
+		&.scrollable {
+			padding-block: .75rem;
+			background-color: var(--bg-light);
+
+			.burger span {
+				background-color: var(--title-color);
+			}
+
+			.brand .brand-slogan {
+				color: var(--title-color);
+			}
+
+			.header-callback .btn-callback {
+				--_color: var(--title-color);
+			}
+		}
 	}
 
 	.container {
