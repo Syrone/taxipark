@@ -6,6 +6,20 @@
 	}
 }
 
+.section--light {
+	margin-inline: var(--container-offset);
+	background-color: var(--bg-light);
+	border-radius: .5rem;
+	padding-block: 2rem;
+	box-shadow: 1rem .625rem 2.5rem 0 rgba(0, 0, 0, 0.07);
+
+	@media (min-width: 992px) {
+		margin-inline: unset;
+		border-radius: unset;
+		padding-block: 3.125rem;
+	}
+}
+
 .section-header {
 	display: flex;
 	flex-direction: column;

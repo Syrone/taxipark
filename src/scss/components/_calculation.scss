@@ -1,0 +1,170 @@
+.calculation {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@media (min-width: 992px) {
+		grid-template-columns: 1fr .5fr;
+	}
+
+	&-header {
+		@media (max-width: 992px) {
+			margin-bottom: 2.5rem;
+		}
+	}
+
+	&-title {
+		@media (max-width: 992px) {
+			text-align: center;
+		}
+	}
+
+	&,
+	&-aside {
+		gap: 1.25rem;
+	}
+
+	&-main {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		padding: 0 1.25rem;
+
+		@media (min-width: 992px) {
+			gap: 2rem;
+			background-color: #F6F6F6;
+			border-radius: .75rem;
+			padding: 2rem;
+			box-shadow: .625rem 1rem 3.125rem 0 rgba(0, 0, 0, 0.1);
+		}
+
+		&-title {
+			grid-column: -1 / 1;
+			font-size: var(--fs-4);
+			text-align: center;
+			margin-bottom: .5rem;
+
+			@media (min-width: 992px) {
+				font-size: var(--fs-5);
+				margin-bottom: 0;
+				text-align: initial;
+			}
+		}
+
+		&-days,
+		&-hours {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 1rem .75rem;
+
+			@media (min-width: 576px) {
+				grid-template-columns: repeat(7, 1fr);
+			}
+		}
+
+		&-btn {
+			--_width: 100%;
+		}
+
+		&-features {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: .75rem;
+			margin-top: .75rem;
+
+			@media (min-width: 576px) {
+				grid-template-columns: repeat(2, 1fr);
+				gap: 1rem;
+			}
+
+			@media (min-width: 992px) {
+				margin-top: 1.25rem;
+			}
+
+			> li {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+
+				&::before {
+					content: '';
+					width: 1.25rem;
+					height: 1.25rem;
+					display: block;
+					flex-shrink: 0;
+					background-image: url(../img/icons/check-list-2.svg);
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+				}
+			}
+		}
+	}
+
+	&-aside {
+		display: flex;
+		flex-direction: column;
+
+		@media (min-width: 776px) {
+			flex-direction: row;
+		}
+
+		@media (min-width: 992px) {
+			flex-direction: column;
+		}
+
+		> * {
+			flex: 1;
+		}
+
+		&--desktop {
+			display: none;
+		}
+
+		&--mobile {
+			margin-top: 1.25rem;
+		}
+
+		@media (min-width: 992px) {
+			&--desktop {
+				display: flex;
+			}
+
+			&--mobile {
+				display: none;
+			}
+		}
+	}
+
+	&-partner,
+	&-price {
+		min-height: 10rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border-radius: .625rem;
+		padding: 2rem;
+
+		@media (min-width: 992px) {
+			min-height: unset;
+		}
+	}
+
+	&-partner {
+		font-size: var(--fs-4);
+		border: 1px solid var(--text-color);
+	}
+
+	&-price {
+		flex-direction: column;
+		background-color: #ddd;
+
+		&-suptitle {
+			margin-bottom: .625rem;
+		}
+
+		&-title {
+			margin-bottom: 1rem;
+		}
+	}
+}
