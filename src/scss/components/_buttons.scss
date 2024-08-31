@@ -147,6 +147,19 @@
 	--_border-color-active: transparent;
 }
 
+.btn-dark {
+	--_color: var(--light-color);
+	--_background-color: var(--title-color);
+	--_color-active: var(--title-color);
+	--_background-color-active: var(--primary-color);
+}
+
+.btn-gray {
+	--_background-color: #E3E3E3;
+	--_color-active: var(--title-color);
+	--_background-color-active: var(--primary-color);
+}
+
 .btn-outline-secondary {
 	--_border: 1px solid currentColor;
 
@@ -155,11 +168,6 @@
 	--_border-color-active: var(--primary-color);
 }
 
-.btn-gray {
-	--_background-color: #E3E3E3;
-	--_color-active: var(--title-color);
-	--_background-color-active: var(--primary-color);
-}
 
 .btn-icon {
 	--_border-radius: .75rem;

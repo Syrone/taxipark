@@ -1,0 +1,113 @@
+.location {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.25rem;
+	
+	@media (min-width: 992px) {
+		grid-template-columns: .5fr 1fr;
+	}
+
+	&-callback {
+		margin-bottom: 1rem;
+
+		@media (min-width: 992px) {
+			margin-bottom: 3.125rem;
+		}
+
+		&-suptitle {
+			font-size: var(--fs-3);
+			color: #8B8B8B;
+			margin-bottom: .5rem;
+		}
+
+		&-btn {
+			--_font-size: 2rem;
+			--_font-weight: 700;
+			--_color: var(--title-color);
+
+			--_icon-size: 2rem;
+
+			gap: .875rem;
+		}
+	}
+
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: .625rem 1.25rem;
+		font-size: var(--fs-2);
+
+		@media (min-width: 992px) {
+			flex-direction: column;
+			gap: 1.25rem;
+			font-size: var(--fs-4);
+			margin-bottom: 1.25rem;
+		}
+
+		> li {
+			display: flex;
+			flex-direction: column;
+
+			span:first-child {
+				font-size: var(--fs-3);
+
+				@media (min-width: 992px) {
+					font-size: var(--fs-5);
+				}
+			}
+
+			.image {
+				vertical-align: middle;
+			}
+		}
+	}
+
+	&-buttons {
+		display: flex;
+		flex-direction: column;
+		gap: .625rem;
+
+		&--desktop {
+			display: none;
+		}
+
+		@media (min-width: 992px) {
+			&--mobile {
+				display: none;
+			}
+
+			&--desktop {
+				display: flex;
+			}
+		}
+
+		.btn {
+			--_width: 100%;
+		}
+	}
+
+	&-end {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+
+		> * {
+			width: 100%;
+		}
+
+		#yandex-map {
+			min-height: 20rem;
+			flex: 1;
+
+			@media (min-width: 992px) {
+				min-height: 25rem;
+			}
+
+			> *,
+			> * > * {
+				width: 100% !important;
+				height: 100% !important;
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.partner {
+	max-width: 13rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: var(--fs-1);
+	font-weight: 500;
+	color: var(--text-color);
+	background-color: var(--bg-light);
+	border-radius: 0.75rem;
+	padding: 0.5rem;
+
+	@media (min-width: 992px) {
+		max-width: 17.5rem;
+		font-size: var(--fs-base);
+	}
+
+	picture {
+		flex-shrink: 0;
+	}
+
+	&-image {
+		width: 2.5rem;
+		height: 2.5rem;
+		display: block;
+
+		@media (min-width: 992px) {
+			width: 3.75rem;
+			height: 3.75rem;
+		}
+	}
+}

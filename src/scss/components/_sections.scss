@@ -22,13 +22,28 @@
 
 .section-header {
 	display: flex;
-	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
 	gap: .75rem;
 	margin-bottom: 1.5rem;
+
+	&:not(.has-partner) {
+		flex-direction: column;
+		align-items: initial;
+		justify-content: initial;
+	}
+
+	.partner {
+		display: none;
+	}
 
 	@media (min-width: 992px) {
 		gap: 2rem;
 		margin-bottom: 2rem;
+
+		.partner {
+			display: flex;
+		}
 	}
 
 	.section-title,
@@ -51,15 +66,29 @@
 }
 
 .section-background {
-
+	background-repeat: no-repeat;
+	
 	@media (min-width: 1200px) {
 		background-image: url(../img/background-svg.svg);
-		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: right bottom;
+	}
 
-		:last-child {
-			margin-bottom: 0;
+	&-circle {
+		@media (min-width: 1200px) {
+			background-image: url(../img/background-circle-svg.svg);
+			background-size: contain;
+			background-position: calc(100% + 109rem - 50vw) bottom;
+		}
+	}
+
+	&-car {
+		@media (min-width: 992px) {
+			background-image: url(../img/car.png);
+			background-size: 43.375rem 14.25rem;
+			background-position: calc(100% + 45rem - 50vw) top;
+			margin-top: -2rem;
+			padding-top: 2rem;
 		}
 	}
 
@@ -67,6 +96,10 @@
 		@media (min-width: 1200px) {
 			margin-bottom: -7.5rem;
 			padding-bottom: 15rem;
+
+			:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 }
