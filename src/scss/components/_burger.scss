@@ -74,6 +74,10 @@
 	top: 0;
 	left: 0;
 	z-index: 1080;
+
+	.burger {
+		--_color: var(--title-color);
+	}
 	
 	&-header {
 		width: 100%;
