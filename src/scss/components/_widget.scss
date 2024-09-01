@@ -1,0 +1,10 @@
+.widget {
+	width: 100%;
+	max-width: 25rem;
+	font-size: var(--fs-4);
+	text-align: center;
+	background-color: var(--body-bg);
+	border: 1px solid var(--text-color);
+	border-radius: .625rem;
+	padding: 1.25rem 2rem;
+}

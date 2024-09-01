@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      <h1 class="visually-hidden">
+        Главная
+      </h1>
+      <div class="sections">
+        <section class="section">
+          <div class="container">
+            <div class="hero hero--desktop">
+              <div class="hero-main">
+                <span class="hero-main-sup">
+                  Таксопарк в Москве
+                </span>
+
+                <h2 class="hero-main-title">
+                  Выбирай комфорт+ и зарабатывай до 
+                  <br>
+                  <span class="text-primary">200.000 ₽/месяц</span>
+                </h2>
+              </div>
+              <div class="hero-picture">
+                <picture>
+                  <source srcset="./img/hero/image.webp" type="image/webp">
+                  <img loading="lazy" src="./img/hero/image.jpg" class="hero-picture-image" width="590" height="610" alt="Картинка">
+                </picture>
+                <div class="partner hero-partner">
+                  <picture>
+                    <img loading="lazy" src="./img/hero/partner.svg" class="partner-image" width="60" height="60" alt="Иконка">
+                  </picture>
+                  <span>
+                    Наш парк генеральный партнер Яндекса
+                  </span>
+                </div>
+              </div>
+              <div class="hero-detail">
+                <div class="hero-detail-price h4">
+                  Для тех, кто ценит роскошь, комфорт и время
+                </div>
+              </div>
+              <div class="hero-detail">
+                <ul class="list-marker hero-detail-list">
+                  <li>
+                    Безопасные авто
+                  </li>
+                  <li>
+                    Прозрачные условия аренды
+                  </li>
+                  <li>
+                    Без залогов и депозитов
+                  </li>
+                  <li>
+                    Все услуги по обслуживанию машин за наш счет
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-base btn-primary hero-detail-btn" data-graph-path="modal-callback">
+                  Выбрать автомобиль
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero hero--mobile">
+            <div class="hero-bg" style="background-image: url(./img/hero/image.webp);">
+              <h2 class="hero-main-title">
+                Выбирай комфорт+ и зарабатывай до 
+                <br>
+                <span class="text-primary">200.000 ₽/месяц</span>
+              </h2>
+              <p class="hero-main-sub">
+                Таксопарк в Москве
+              </p>
+              <button type="button" class="btn btn-base btn-primary hero-main-btn" data-graph-path="modal-callback">
+                Выбрать автомобиль
+                <span class="icon">
+                  <svg>
+                    <use xlink:href="img/icons/arrow-long-right.svg#svg-arrow-long-right"></use>
+                  </svg>
+                </span>
+              </button>
+              <div class="partner hero-partner">
+                <picture>
+                  <img loading="lazy" src="./img/hero/partner.svg" class="partner-image" width="60" height="60" alt="Иконка">
+                </picture>
+                <span>
+                  Наш парк генеральный партнер Яндекса
+                </span>
+              </div>
+            </div>
+            <div class="hero-footer">
+              <div class="hero-detail">
+                <div class="hero-detail-price h4">
+                  Для тех, кто ценит роскошь, комфорт и время
+                </div>
+              </div>
+              <div class="hero-detail">
+                <ul class="list-marker hero-detail-list">
+                  <li>
+                    Безопасные авто
+                  </li>
+                  <li>
+                    Прозрачные условия аренды
+                  </li>
+                  <li>
+                    Без залогов и депозитов
+                  </li>
+                  <li>
+                    Все услуги по обслуживанию машин за наш счет
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-background section-background--offset-bottom">
+          <section class="section">
+            <div class="container">
+              <div class="section-header">
+                <h2 class="section-title">
+                  Мы создали комфортные условия <br>
+                  в которых выгодно зарабатывать
+                </h2>
+                <p class="section-subtitle">
+                  Это все ты найдешь в нашем Таксопарке. Здесь не нужно 
+                  <br>
+                  переживать о качестве автомобился. Мы уже все сделали за тебя
+                </p>
+              </div>
+  
+              <ul class="list-reset features">
+                <li>
+                  Автомобили класса комфорт+ в отличном техническом состоянии
+                </li>
+                <li>
+                  Вам не нужно платить за ТО
+                </li>
+                <li>
+                  Вы всегда получаете чистую машину с убранным салоном
+                </li>
+                <li>
+                  Вы управляете своим заработком. Мы не ставим никаких ограничений
+                </li>
+                <li>
+                  Комиссия парку от заработанной суммы всего 5%
+                </li>
+              </ul>
+            </div>
+          </section>
+  
+          <section class="section">
+            <div class="container">
+              <div class="section-header">
+                <h2 class="section-title">
+                  Роскошный, современный автомобиль. 
+                  <br>
+                  Почувствуй комфорт вместе с нами
+                </h2>
+                <p class="section-subtitle">
+                  Выбери автомобиль на свой вкус и наслаждайся 
+                  <br>
+                  поездкой в любое время
+                </p>
+              </div>
+
+              <div class="cards">
+                <article class="card">
+                  <div class="card-picture">
+                    <picture>
+                      <source srcset="./img/cards/image-1.webp" type="image/webp">
+                      <img loading="lazy" src="./img/cards/image-1.jpg" class="card-picture-image" width="326" height="200" alt="Картинка">
+                    </picture>
+                  </div>
+                  <h3 class="card-title">
+                    Hyundai Solaris
+                  </h3>
+                  <ul class="list-reset card-detail">
+                    <li>
+                      <span>Г.В.:</span>
+                      <span>2023</span>
+                    </li>
+                    <li>
+                      <span>КПП:</span>
+                      <span>Автомат</span>
+                    </li>
+                    <li>
+                      <span>Топливо:</span>
+                      <span>Бензин</span>
+                    </li>
+                    <li>
+                      <span>Расход по городу:</span>
+                      <span>10,4 л</span>
+                    </li>
+                  </ul>
+                  <p class="card-price h3">
+                    от 1600 ₽/сутки
+                  </p>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-base btn-outline-secondary" data-graph-path="modal-callback">
+                      Арендую
+                    </button>
+                    <button type="button" class="btn btn-icon btn-outline-secondary">
+                      <span class="icon">
+                        <svg>
+                          <use xlink:href="img/icons/arrow-up-right.svg#svg-arrow-up-right"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-picture">
+                    <picture>
+                      <source srcset="./img/cards/image-2.webp" type="image/webp">
+                      <img loading="lazy" src="./img/cards/image-2.jpg" class="card-picture-image" width="326" height="200" alt="Картинка">
+                    </picture>
+                  </div>
+                  <h3 class="card-title">
+                    Hyundai Solaris
+                  </h3>
+                  <ul class="list-reset card-detail">
+                    <li>
+                      <span>Г.В.:</span>
+                      <span>2023</span>
+                    </li>
+                    <li>
+                      <span>КПП:</span>
+                      <span>Автомат</span>
+                    </li>
+                    <li>
+                      <span>Топливо:</span>
+                      <span>Бензин</span>
+                    </li>
+                    <li>
+                      <span>Расход по городу:</span>
+                      <span>10,4 л</span>
+                    </li>
+                  </ul>
+                  <p class="card-price h3">
+                    от 1600 ₽/сутки
+                  </p>
+                  <div class="card-footer">
+                    <button type="button" class="btn btn-base btn-outline-secondary" data-graph-path="modal-callback">
+                      Арендую
+                    </button>
+                    <button type="button" class="btn btn-icon btn-outline-secondary">
+                      <span class="icon">
+                        <svg>
+                          <use xlink:href="img/icons/arrow-up-right.svg#svg-arrow-up-right"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-picture">
+                    <picture>
+                      <source srcset="./img/cards/image-3.webp" type="image/webp">
+                      <img loading="lazy" src="./img/cards/image-3.jpg" class="card-picture-image" width="326" height="200" alt="Картинка">
+                    </picture>
+                  </div>
+                  <h3 class="card-title">
+                    Hyundai Solaris
+                  </h3>
+                  <ul class="list-reset card-detail">
+                    <li>
+                      <span>Г.В.:</span>
+                      <span>2023</span>
+                    </li>
+                    <li>
+                      <span>КПП:</span>
+                      <span>Автомат</span>
+                    </li>
+                    <li>
+                      <span>Топливо:</span>
+                      <span>Бензин</span>
+                    </li>
+                    <li>
+                      <span>Расход по городу:</span>
+                      <span>10,4 л</span>
+                    </li>
+                  </ul>
+                  <p class="card-price h3">
+                    от 1600 ₽/сутки
+                  </p>
+                  <div class="card-footer" data-graph-path="modal-callback">
+                    <button type="button" class="btn btn-base btn-outline-secondary">
+                      Арендую
+                    </button>
+                    <button type="button" class="btn btn-icon btn-outline-secondary">
+                      <span class="icon">
+                        <svg>
+                          <use xlink:href="img/icons/arrow-up-right.svg#svg-arrow-up-right"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-picture">
+                    <picture>
+                      <source srcset="./img/cards/image-4.webp" type="image/webp">
+                      <img loading="lazy" src="./img/cards/image-4.jpg" class="card-picture-image" width="326" height="200" alt="Картинка">
+                    </picture>
+                  </div>
+                  <h3 class="card-title">
+                    Hyundai Solaris
+                  </h3>
+                  <ul class="list-reset card-detail">
+                    <li>
+                      <span>Г.В.:</span>
+                      <span>2023</span>
+                    </li>
+                    <li>
+                      <span>КПП:</span>
+                      <span>Автомат</span>
+                    </li>
+                    <li>
+                      <span>Топливо:</span>
+                      <span>Бензин</span>
+                    </li>
+                    <li>
+                      <span>Расход по городу:</span>
+                      <span>10,4 л</span>
+                    </li>
+                  </ul>
+                  <p class="card-price h3">
+                    от 1600 ₽/сутки
+                  </p>
+                  <div class="card-footer" data-graph-path="modal-callback">
+                    <button type="button" class="btn btn-base btn-outline-secondary">
+                      Арендую
+                    </button>
+                    <button type="button" class="btn btn-icon btn-outline-secondary">
+                      <span class="icon">
+                        <svg>
+                          <use xlink:href="img/icons/arrow-up-right.svg#svg-arrow-up-right"></use>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="section-background section-background-circle">
+          <section class="section js-calculation">
+            <div class="section--light">
+              <div class="container">
+                <div class="calculation-header section-header">
+                  <h2 class="calculation-title section-title">
+                    Рассчитайте <span class="text-primary">свой заработок</span>
+                    <br>
+                    в нашем таксопарке
+                  </h2>
+                </div>
+    
+                <div class="calculation">
+                  <div class="calculation-main">
+                    <div class="calculation-main-days">
+                      <h3 class="calculation-main-title">
+                        Количество рабочих дней
+                      </h3>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        1
+                      </button>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        2
+                      </button>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        3
+                      </button>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        4
+                      </button>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        5
+                      </button>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        6
+                      </button>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        7
+                      </button>
+                    </div>
+                    <div class="calculation-main-hours">
+                      <h3 class="calculation-main-title">
+                        Сколько часов в день вы планируете работать?
+                      </h3>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        6
+                      </button>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        7
+                      </button>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        8
+                      </button>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        9
+                      </button>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        10
+                      </button>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        11
+                      </button>
+                      <button type="button" class="btn btn-base btn-gray calculation-main-btn">
+                        12
+                      </button>
+                    </div>
+                    <ul class="list-reset calculation-main-features">
+                      <li>
+                        Гарантированная выручка - 1500 ₽ в день
+                      </li>
+                      <li>
+                        Повышенная стоимость мин. заказа
+                      </li>
+                      <li>
+                        Гибкий график и перерыв на обед
+                      </li>
+                      <li>
+                        Приоритетность распределения заказов
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="calculation-aside calculation-aside--desktop">
+                    <div class="calculation-partner">
+                      <p>
+                        Вы получаете привелегии от нас как партнер Яндекс.Такси
+                      </p>
+                    </div>
+                    <div class="calculation-price">
+                      <p class="calculation-price-suptitle">
+                        Ваш заработок в комфорте+
+                      </p>
+                      <h3 class="h4 calculation-price-title">
+                        <span class="calculation-price-comfort-plus">0.00</span> ₽ в месяц
+                      </h3>
+                      <button type="button" class="btn btn-base btn-primary" data-graph-path="modal-callback">
+                        Выбрать автомобиль
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="calculation-aside calculation-aside--mobile">
+                <div class="calculation-partner">
+                  <p>
+                    Вы получаете привелегии от нас как партнер Яндекс.Такси
+                  </p>
+                </div>
+                <div class="calculation-price">
+                  <p class="calculation-price-suptitle">
+                    Ваш заработок в комфорт+
+                  </p>
+                  <h3 class="h4 calculation-price-title">
+                    <span class="calculation-price-comfort-plus">0.00</span> ₽ в месяц
+                  </h3>
+                  <button type="button" class="btn btn-base btn-primary" data-graph-path="modal-callback">
+                    Выбрать автомобиль
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="container">
+              <div class="section-header">
+                <h2 class="section-title">
+                  Начните зарабатывать 
+                  <br>
+                  с Таксопарком 369 уже сегодня
+                </h2>
+              </div>
+
+              <div class="start">
+                <div class="start-item">
+                  <h3 class="h4 start-item-title">
+                    Первый день - бесплатно
+                  </h3>
+                  <p class="start-item-subtitle">
+                    Попробуй работать с нашим парком без обязательств
+                  </p>
+                </div>
+                <div class="start-item">
+                  <h3 class="h4 start-item-title">
+                    Достаточно 2-х документов
+                  </h3>
+                  <p class="start-item-subtitle">
+                    Для аренды авто требуются только паспорт и водительское удостоверение
+                  </p>
+                </div>
+                <div class="start-item">
+                  <h3 class="h4 start-item-title">
+                    Быстрый выход на линию
+                  </h3>
+                  <p class="start-item-subtitle">
+                    Для аренды авто требуются только паспорт и водительское удостоверение
+                  </p>
+                </div>
+                <div class="start-item">
+                  <h3 class="h4 start-item-title">
+                    Зарабатывайте с первого дня
+                  </h3>
+                  <p class="start-item-subtitle">
+                    Обеспечим заказами сразу с момента выхода на линию
+                  </p>
+                </div>
+                <div class="start-picture">
+                  <picture>
+                    <source srcset="./img/start/image.webp" type="image/webp">
+                    <img loading="lazy" src="./img/start/image.jpg" class="start-picture-image" width="1200" height="350" alt="Картинка">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">
+                Программа лояльности 
+                <br>
+                для наших водителей
+              </h2>
+            </div>
+
+            <div class="reward">
+              <div class="reward-aside">
+                <h3 class="h4 reward-title">
+                  Бонусы программы
+                </h3>
+                <ul class="list-reset reward-list">
+                  <li>
+                    2 дня аренды в подарок (первый и последний день месяца)
+                  </li>
+                  <li>
+                    Скидка 25% на один день аренды
+                  </li>
+                  <li>
+                    Одна мойка в подарок
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-base btn-dark reward-btn" data-graph-path="modal-callback">
+                  Присоединиться к команде
+                </button>
+              </div>
+              <div class="reward-main">
+                <h3 class="h4 reward-title">
+                  Клиентские дни для участников 
+                  <br>
+                  программы лояльности
+                </h3>
+                <div class="reward-main-content">
+                  <p>
+                    Регулярно награждаем памятными подарками участников программы пояльности и торжественно вручаем сертификаты.
+                  </p>
+                  <p>
+                    Приглашаем на Клиентские дни семьи сотрудников. Вместе проводим время в приятной и дружеской атмосфере, знакомимся, общаемся и занимаемся спортом.
+                  </p>
+                </div>
+                <p class="reward-hint">
+                  Таксоларк 369 - это не просто место аренды автомобиля, это сообщество, где вы всегда найдете поддержку и новых друзей!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-background section-background-car">
+          <div class="container">
+            <div class="section-header has-partner">
+              <h2 class="section-title">
+                Почему водители 
+                <br>
+                выбирают именно нас
+              </h2>
+
+              <div class="partner">
+                <picture>
+                  <img loading="lazy" src="./img/hero/partner.svg" class="partner-image" width="60" height="60" alt="Иконка">
+                </picture>
+                <span>
+                  Наш парк генеральный партнер Яндекса
+                </span>
+              </div>
+            </div>
+
+            <ul class="list-reset loyalty">
+              <li class="loyalty-item">
+                <div class="loyalty-item-picture">
+                  <picture>
+                    <img loading="lazy" src="./img/icons/dms.svg" class="loyalty-item-picture-image" width="40" height="40" alt="Картинка">
+                  </picture>
+                </div>
+                <h3 class="loyalty-item-title">
+                  ДМС стоимостью 50.000 ₽
+                </h3>
+                <p class="loyalty-item-text">
+                  С первого дня аренды оказываем любую медицинскую помощшь, в то числе и стоматологию на год
+                </p>
+              </li>
+
+              <li class="loyalty-item">
+                <div class="loyalty-item-picture">
+                  <picture>
+                    <img loading="lazy" src="./img/icons/osago.svg" class="loyalty-item-picture-image" width="40" height="40" alt="Картинка">
+                  </picture>
+                </div>
+                <h3 class="loyalty-item-title">
+                  Официальный ОСАГО
+                </h3>
+                <p class="loyalty-item-text">
+                  Все автомобили имеют страховку ОСАГО
+                </p>
+              </li>
+
+              <li class="loyalty-item">
+                <div class="loyalty-item-picture">
+                  <picture>
+                    <img loading="lazy" src="./img/icons/no-plan.svg" class="loyalty-item-picture-image" width="40" height="40" alt="Картинка">
+                  </picture>
+                </div>
+                <h3 class="loyalty-item-title">
+                  Без плана
+                </h3>
+                <p class="loyalty-item-text">
+                  Мы не устанавливаем плана на выручку от заказов. Вы платите только 5% от выручки за день
+                </p>
+              </li>
+
+              <li class="loyalty-item">
+                <div class="loyalty-item-picture">
+                  <picture>
+                    <img loading="lazy" src="./img/icons/free-time.svg" class="loyalty-item-picture-image" width="40" height="40" alt="Картинка">
+                  </picture>
+                </div>
+                <h3 class="loyalty-item-title">
+                  Свободный график
+                </h3>
+                <p class="loyalty-item-text">
+                  Работайте в удобное для вас время – от нескольких часов до полной смены. Самостоятельно выбирайте выходные дни.
+                </p>
+              </li>
+
+              <li class="loyalty-item">
+                <div class="loyalty-item-picture">
+                  <picture>
+                    <img loading="lazy" src="./img/icons/unlimited.svg" class="loyalty-item-picture-image" width="40" height="40" alt="Картинка">
+                  </picture>
+                </div>
+                <h3 class="loyalty-item-title">
+                  Без ограничения
+                </h3>
+                <p class="loyalty-item-text">
+                  Работайте без лимита пробега и ограничений по географии работы - принимайте заказы на любые расстояния
+                </p>
+              </li>
+
+              <li class="loyalty-item">
+                <div class="loyalty-item-picture">
+                  <picture>
+                    <img loading="lazy" src="./img/icons/home-storage.svg" class="loyalty-item-picture-image" width="40" height="40" alt="Картинка">
+                  </picture>
+                </div>
+                <h3 class="loyalty-item-title">
+                  Домашнее хранение
+                </h3>
+                <p class="loyalty-item-text">
+                  Вам не требуется возращать автомобиль в таксопарк. Вы можете прковаться рядом с домом
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section"> 
+          <div class="container">
+            <div class="callback-form">
+              <div class="callback-form-start">
+                <div class="section-header">
+                  <h2 class="section-title">
+                    Хотите получить подробные условия аренды?
+                  </h2>
+                  <p class="section-subtitle">
+                    Оставьте заявку и мы с вами свяжемся в течении 5 минут в расскажем о условиях
+                  </p>
+                </div>
+                <form class="callback-form-form">
+                  <input type="text" class="field callback-form-field" name="Имя" placeholder="Ваше имя">
+                  <input type="tel" class="field callback-form-field" name="Телефон" placeholder="Ваш номер">
+                  <button type="submit" class="btn btn-base btn-primary callback-form-submit">
+                    Взять авто в аренду
+                  </button>
+                  <p class="callback-form-hint">
+                    Нажимая на кнопку я соглашаюсь условиями <a href="#" class="btn btn-inherit text-underline">политики конфиденциальности</a>
+                  </p>
+                </form>
+              </div>
+              <div class="callback-form-end">
+                <picture>
+                  <source srcset="./img/callback/image.webp" type="image/webp">
+                  <img loading="lazy" src="./img/callback/image.jpg" class="callback-form-image" width="608" height="549" alt="Картинка">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">
+                Адреса таксопарков - Москва
+              </h2>
+            </div>
+
+            <div class="location">
+              <div class="location-start">
+                <div class="location-callback">
+                  <p class="location-callback-suptitle">
+                    Единый номер диспетческой
+                  </p>
+                  <a href="tel:+79952222369" class="btn location-callback-btn">
+                    <span class="icon">
+                      <svg>
+                        <use xlink:href="img/icons/phone.svg#svg-phone"></use>
+                      </svg>
+                    </span>
+                    +7 (995) 222-23-69
+                  </a>
+                </div>
+                <ul class="list-reset location-list">
+                  <li class="location-list-item">
+                    <span>
+                      <img loading="lazy" src="./img/icons/m.svg" class="image" width="23" height="17" alt="М">
+                      Владыкино /
+                      <img loading="lazy" src="./img/icons/m.svg" class="image" width="23" height="17" alt="М">
+                      Окружная
+                    </span>
+                    <span>
+                      Нововладыкинский проезд, дом 2 стр. 2
+                    </span>
+                  </li>
+                  <li class="location-list-item">
+                    <span>
+                      <img loading="lazy" src="./img/icons/m.svg" class="image" width="23" height="17" alt="М">
+                      Аннино
+                    </span>
+                    <span>
+                      Варшавское шоссе, 170Г
+                    </span>
+                  </li>
+                  <li class="location-list-item">
+                    <span>
+                      <img loading="lazy" src="./img/icons/m.svg" class="image" width="23" height="17" alt="М">
+                      Авиамоторная
+                    </span>
+                    <span>
+                      4-я Кабельная 2с2
+                    </span>
+                  </li>
+                  <li class="location-list-item">
+                    <span>
+                      <img loading="lazy" src="./img/icons/m.svg" class="image" width="23" height="17" alt="М">
+                      Лихоборы
+                    </span>
+                    <span>
+                      пр-д 3-й Нижнелихоборский, д. 1А
+                    </span>
+                  </li>
+                </ul>
+                <div class="location-buttons location-buttons--desktop">
+                  <button type="button" class="btn btn-base btn-dark" data-graph-path="modal-callback">
+                    Приступить к работе
+                  </button>
+                  <a href="#" class="btn btn-base btn-dark">
+                    Телеграм канал
+                  </a>
+                </div>
+              </div>
+              <div class="location-end">
+                <div id="yandex-map"></div>
+                <div class="location-buttons location-buttons--mobile">
+                  <button type="button" class="btn btn-base btn-dark" data-graph-path="modal-callback">
+                    Приступить к работе
+                  </button>
+                  <a href="#" class="btn btn-base btn-dark">
+                    Телеграм канал
+                  </a>
+                </div>
+                <div class="gift">
+                  <h3 class="h4 gift-title">
+                    Получить 2 дня 
+                    <br>
+                    аренды в подарок
+                  </h3>
+                  <button type="button" class="btn btn-base btn-primary gift-btn" data-graph-path="modal-callback">
+                    Приступить к работе
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="graph-modal">
+        <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-callback">
+          <!-- <button class="btn js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button> -->
+          <div class="graph-modal__content">
+            <h3 class="h2 graph-modal__content-title">
+              Оставить заявку
+            </h3>
+            <p class="graph-modal__content-subtitle">
+              и наш менеджер свяжется с вами 
+              <br>
+              в течение 5 минут
+            </p>
+
+            <form class="graph-modal__content-form">
+              <input type="text" class="field" name="Имя" placeholder="Ваше имя" required>
+              <input type="tel" class="field" name="Телефон" placeholder="Ваш номер" required>
+              <button type="submit" class="btn btn-base btn-dark--inverse graph-modal__content-submit">
+                Отправить
+              </button>
+            </form>
+
+            <p class="graph-modal__content-hint">
+              Отправляя данную форму вы соглашаетесь с <a href="#" class="btn btn-inherit text-underline">политикой конфиденциальности</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

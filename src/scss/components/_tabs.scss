@@ -1,0 +1,45 @@
+.tabs {
+
+	&-header {
+		margin-bottom: 1.25rem;
+
+		.widget {
+			display: none;
+		}
+
+		@media (min-width: 992px) {
+			display: grid;
+			grid-template-columns: 1fr .4875fr;
+			justify-content: space-between;
+			align-items: flex-end;
+			gap: 1.25rem;
+			margin-bottom: 2rem;
+
+			.widget {
+				display: block;
+			}
+		}
+	}
+
+	&__nav {
+		gap: .75rem;
+		overflow-y: hidden;
+		overflow-x: auto;
+
+		@media (min-width: 992px) {
+			gap: 1.25rem;
+		}
+
+		&-btn {
+			--_border-radius: 2rem;
+			--_padding-x: 2rem;
+			--_background-color: var(--bg-light);
+			--_color-active: var(--title-color);
+			--_background-color-active: var(--primary-color);
+
+			@media (min-width: 992px) {
+				--_padding-x: 3rem;
+			}
+		}
+	}
+}

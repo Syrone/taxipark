@@ -57,8 +57,45 @@
 			}
 		}
 
+		&-list {
+
+			@media (min-width: 992px) {
+				display: flex;
+				flex-direction: column;
+				gap: .25rem;
+			}
+		}
+
 		&-btn {
 			--_width: 100%;
+		}
+
+		&--full {
+			grid-column: 1 / -1;
+
+			@media (min-width: 992px) {
+				grid-column: 1 / 3;
+			}
+		}
+
+		&-info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: initial;
+
+			@media (min-width: 576px) {
+				flex-direction: row;
+				gap: 1.5rem;
+			}
+
+			@media (min-width: 992px) {
+				gap: 2rem;
+			}
+
+			> * {
+				flex: 1;
+			}
 		}
 	}
 

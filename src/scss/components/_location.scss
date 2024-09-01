@@ -7,6 +7,13 @@
 		grid-template-columns: .5fr 1fr;
 	}
 
+	&-start {
+		@media (min-width: 992px) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
 	&-callback {
 		margin-bottom: 1rem;
 
@@ -38,6 +45,7 @@
 		font-size: var(--fs-2);
 
 		@media (min-width: 992px) {
+			flex: 1;
 			flex-direction: column;
 			gap: 1.25rem;
 			font-size: var(--fs-4);

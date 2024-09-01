@@ -6,4 +6,5 @@ import './components/calculation.js';
 import './components/choices.js';
 import './components/swipers.js';
 import './components/modals.js';
+import './components/tabs.js';
 import './components/yandex-map.js';

@@ -12,7 +12,6 @@
 		width: 3.75rem;
 		height: 3.75rem;
 		display: block;
-		border-radius: 50%;
 
 		@media (min-width: 992px) {
 			width: 4.25rem;
@@ -24,7 +23,14 @@
 		max-width: 6.75rem;
 		color: var(--text-color);
 		margin-left: .375rem;
-		border-left: 1px solid var(--title-color);
+		border-left: 1px solid currentColor;
 		padding: .25rem 0 .25rem .75rem;
+	}
+
+	&:not(.footer-brand) {
+
+		.brand-image {
+			border-radius: 50%;
+		}
 	}
 }

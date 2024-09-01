@@ -49,7 +49,7 @@
 		flex-shrink: 0;
 	}
 
-	&:is(:focus-visible, :active, .is-active, .mixitup-control-active) {
+	&:is(:focus-visible, :active, .is-active, .tabs__nav-btn--active) {
 		color: var(--_color-active);
 		background-color: var(--_background-color-active);
 		border-color: var(--_border-color-active);
