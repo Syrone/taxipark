@@ -1,0 +1,58 @@
+.graph-modal {
+	z-index: 1080;
+
+	&__container {
+		width: calc(100% - var(--container-offset) * 2);
+		max-width: 20rem;
+		background-color: var(--primary-color);
+		border-radius: .625rem;
+		padding: 1.5rem;
+		text-align: center;
+
+		@media (min-width: 992px) {
+			max-width: 27.5rem;
+			padding: 2.5rem;
+		}
+	}
+
+	&__content {
+
+		&-title {
+			font-weight: 500;
+			margin-bottom: .75rem;
+
+			@media (min-width: 992px) {
+				margin-bottom: 1rem;
+			}
+		}
+
+		&-subtitle {
+			font-size: var(--fs-base);
+			margin-bottom: 1rem;
+
+			@media (min-width: 992px) {
+				font-size: var(--fs-4);
+				margin-bottom: 1.5rem;
+			}
+		}
+
+		&-form {
+			display: flex;
+			flex-direction: column;
+			gap: .625rem;
+			margin-bottom: 1.25rem;
+
+			@media (min-width: 992px) {
+				margin-bottom: 2rem;
+			}
+		}
+
+		&-submit {
+			--_width: 100%;
+		}
+
+		&-hint {
+			font-size: var(--fs-2);
+		}
+	}
+}

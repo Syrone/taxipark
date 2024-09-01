@@ -60,7 +60,7 @@
                     Все услуги по обслуживанию машин за наш счет
                   </li>
                 </ul>
-                <button type="button" class="btn btn-base btn-primary hero-detail-btn">
+                <button type="button" class="btn btn-base btn-primary hero-detail-btn" data-graph-path="modal-callback">
                   Выбрать автомобиль
                 </button>
               </div>
@@ -75,7 +75,7 @@
               <p class="hero-main-sub">
                 Таксопарк в Москве
               </p>
-              <button type="button" class="btn btn-base btn-primary hero-main-btn">
+              <button type="button" class="btn btn-base btn-primary hero-main-btn" data-graph-path="modal-callback">
                 Выбрать автомобиль
                 <span class="icon">
                   <svg>
@@ -208,7 +208,7 @@
                       от 1600 ₽/сутки
                     </p>
                     <div class="card-footer">
-                      <button type="button" class="btn btn-base btn-outline-secondary">
+                      <button type="button" class="btn btn-base btn-outline-secondary" data-graph-path="modal-callback">
                         Арендую
                       </button>
                       <button type="button" class="btn btn-icon btn-outline-secondary">
@@ -254,7 +254,7 @@
                       от 1600 ₽/сутки
                     </p>
                     <div class="card-footer">
-                      <button type="button" class="btn btn-base btn-outline-secondary">
+                      <button type="button" class="btn btn-base btn-outline-secondary" data-graph-path="modal-callback">
                         Арендую
                       </button>
                       <button type="button" class="btn btn-icon btn-outline-secondary">
@@ -299,7 +299,7 @@
                     <p class="card-price h3">
                       от 1600 ₽/сутки
                     </p>
-                    <div class="card-footer">
+                    <div class="card-footer" data-graph-path="modal-callback">
                       <button type="button" class="btn btn-base btn-outline-secondary">
                         Арендую
                       </button>
@@ -345,7 +345,7 @@
                     <p class="card-price h3">
                       от 1600 ₽/сутки
                     </p>
-                    <div class="card-footer">
+                    <div class="card-footer" data-graph-path="modal-callback">
                       <button type="button" class="btn btn-base btn-outline-secondary">
                         Арендую
                       </button>
@@ -458,7 +458,7 @@
                       <h3 class="h4 calculation-price-title">
                         <span class="calculation-price-economy">0.00</span> ₽ в месяц
                       </h3>
-                      <button type="button" class="btn btn-base btn-primary">
+                      <button type="button" class="btn btn-base btn-primary" data-graph-path="modal-callback">
                         Выбрать автомобиль
                       </button>
                     </div>
@@ -480,7 +480,7 @@
                   <h3 class="h4 calculation-price-title">
                     <span class="calculation-price-economy">0.00</span> ₽ в месяц
                   </h3>
-                  <button type="button" class="btn btn-base btn-primary">
+                  <button type="button" class="btn btn-base btn-primary" data-graph-path="modal-callback">
                     Выбрать автомобиль
                   </button>
                 </div>
@@ -568,7 +568,7 @@
                     Одна мойка в подарок
                   </li>
                 </ul>
-                <button type="button" class="btn btn-base btn-dark reward-btn">
+                <button type="button" class="btn btn-base btn-dark reward-btn" data-graph-path="modal-callback">
                   Присоединиться к команде
                 </button>
               </div>
@@ -798,7 +798,7 @@
                   </li>
                 </ul>
                 <div class="location-buttons location-buttons--desktop">
-                  <button type="button" class="btn btn-base btn-dark">
+                  <button type="button" class="btn btn-base btn-dark" data-graph-path="modal-callback">
                     Приступить к работе
                   </button>
                   <a href="#" class="btn btn-base btn-dark">
@@ -809,7 +809,7 @@
               <div class="location-end">
                 <div id="yandex-map"></div>
                 <div class="location-buttons location-buttons--mobile">
-                  <button type="button" class="btn btn-base btn-dark">
+                  <button type="button" class="btn btn-base btn-dark" data-graph-path="modal-callback">
                     Приступить к работе
                   </button>
                   <a href="#" class="btn btn-base btn-dark">
@@ -822,7 +822,7 @@
                     <br>
                     аренды в подарок
                   </h3>
-                  <button type="button" class="btn btn-base btn-primary gift-btn">
+                  <button type="button" class="btn btn-base btn-primary gift-btn" data-graph-path="modal-callback">
                     Приступить к работе
                   </button>
                 </div>
@@ -830,6 +830,34 @@
             </div>
           </div>
         </section>
+      </div>
+
+      <div class="graph-modal">
+        <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-callback">
+          <!-- <button class="btn js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button> -->
+          <div class="graph-modal__content">
+            <h3 class="h2 graph-modal__content-title">
+              Оставить заявку
+            </h3>
+            <p class="graph-modal__content-subtitle">
+              и наш менеджер свяжется с вами 
+              <br>
+              в течение 5 минут
+            </p>
+
+            <form class="graph-modal__content-form">
+              <input type="text" class="field" name="Имя" placeholder="Ваше имя" required>
+              <input type="tel" class="field" name="Телефон" placeholder="Ваш номер" required>
+              <button type="submit" class="btn btn-base btn-dark graph-modal__content-submit">
+                Отправить
+              </button>
+            </form>
+
+            <p class="graph-modal__content-hint">
+              Отправляя данную форму вы соглашаетесь с <a href="#" class="btn btn-inherit text-underline">политикой конфиденциальности</a>
+            </p>
+          </div>
+        </div>
       </div>
     </main>
     @include('partials/footer.html')

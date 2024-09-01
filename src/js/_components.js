@@ -5,4 +5,5 @@ import './components/accordion.js';
 import './components/calculation.js';
 import './components/choices.js';
 import './components/swipers.js';
+import './components/modals.js';
 import './components/yandex-map.js';

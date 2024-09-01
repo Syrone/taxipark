@@ -27,12 +27,18 @@
 	}
 	
 	&:not(.shown) {
+
 		.dropdown-body {
 			display: none;
 		}
 	}
 
 	&.is-show {
+		.dropdown-button {
+			.icon {
+				transform: rotateX(180deg);
+			}
+		}
 		
 		.dropdown-body {
 			max-height: 1000px;
