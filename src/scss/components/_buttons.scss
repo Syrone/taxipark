@@ -152,6 +152,13 @@
 	--_background-color: var(--title-color);
 	--_color-active: var(--title-color);
 	--_background-color-active: var(--primary-color);
+
+	&--inverse {
+		--_color: var(--light-color);
+		--_background-color: var(--title-color);
+		--_color-active: var(--title-color);
+		--_background-color-active: var(--bg-light);
+	}
 }
 
 .btn-gray {
