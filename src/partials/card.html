@@ -1,0 +1,44 @@
+<article class="card">
+	<div class="card-picture">
+		<picture>
+			<source srcset="@card.img.webp" type="image/webp">
+			<img loading="lazy" src="@card.img.png" class="card-picture-image" width="326" height="200" alt="Картинка">
+		</picture>
+	</div>
+	<h3 class="card-title">
+		@card.title
+	</h3>
+	<ul class="list-reset card-detail">
+		<li>
+			<span>Г.В.:</span>
+			<span>@card.year</span>
+		</li>
+		<li>
+			<span>КПП:</span>
+			<span>@card.kpp</span>
+		</li>
+		<li>
+			<span>Топливо:</span>
+			<span>@card.fuel</span>
+		</li>
+		<li>
+			<span>Расход по городу:</span>
+			<span>@card.flow</span>
+		</li>
+	</ul>
+	<p class="card-price h3">
+		от @card.price ₽/сутки
+	</p>
+	<div class="card-footer">
+		<button type="button" class="btn btn-base btn-outline-secondary" data-graph-path="modal-callback">
+			Арендую
+		</button>
+		<button type="button" class="btn btn-icon btn-outline-secondary">
+			<span class="icon">
+				<svg>
+					<use xlink:href="img/icons/arrow-up-right.svg#svg-arrow-up-right"></use>
+				</svg>
+			</span>
+		</button>
+	</div>
+</article>

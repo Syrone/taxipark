@@ -81,6 +81,10 @@
 
 	display: inline;
 	text-align: initial;
+
+	&--inverse {
+		--_color-active: var(--light-color)
+	}
 }
 
 .btn-whatsapp,
