@@ -1,0 +1,17 @@
+.messangers {
+	display: flex;
+	gap: .5rem;
+	position: fixed;
+	bottom: .5rem;
+	left: var(--container-offset);
+	right: var(--container-offset);
+	z-index: 1020;
+
+	> * {
+		flex: 1;
+	}
+
+	@media (min-width: 992px) {
+		display: none;
+	}
+}

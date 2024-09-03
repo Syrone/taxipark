@@ -96,6 +96,10 @@
 
 	--_icon-size: 1rem;
 
+	&.btn-base {
+		--_color: var(--light-color);
+	}
+
 	@media (min-width: 992px) {
 		--_color: var(--light-color);
 		--_padding-y: .5rem;
@@ -108,6 +112,11 @@
 .btn-whatsapp {
 	--_color: #A6A6AC;
 	--_background-color: #EFEFF6;
+
+	&.btn-base {
+		--_color: var(--light-color);
+		--_background-color: #4BAE4F;
+	}
 
 	@media (min-width: 992px) {
 		--_color: var(--light-color);
